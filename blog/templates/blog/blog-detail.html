@@ -1,0 +1,26 @@
+{% extends "blog/base.html" %} {% block content %}
+
+<div class="card" style="margin: 20px">
+  <div class="card-body">
+    <article class="media content-section">
+      <div class="media-body">
+        <div class="article-metadata">
+          <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
+          />
+          <a class="mr-2" href="/blog/">
+            <span class="material-symbols-outlined"> arrow_back_ios </span></a
+          >
+          <small class="text-muted">{{ object.date_posted }}</small>
+        </div>
+        <h2>{{ object.title }}</h2>
+        <p class="article-content">{{ object.content }}</p>
+        <a class="mr-2" href="{% url 'blog-update' post.id %}">
+          <span class="material-symbols-outlined"> edit </span></a
+        >
+      </div>
+    </article>
+  </div>
+</div>
+{% endblock content %}
