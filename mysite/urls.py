@@ -21,5 +21,6 @@ urlpatterns = [
     path("", include("polls.urls")),
     path('blog/', include("blog.urls")),
     path("api/", include("api.urls")),
+    path("openai/", include("openAIproject1.urls")),
     path('admin/', admin.site.urls),
 ]
