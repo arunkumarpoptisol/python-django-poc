@@ -32,6 +32,7 @@ ALLOWED_HOSTS = []
 
 INSTALLED_APPS = [
     "polls.apps.PollsConfig",
+    "openAIproject1.apps.Openaiproject1Config",
     "blog.apps.BlogConfig",
     'django.contrib.admin',
     'django.contrib.auth',

@@ -5,4 +5,6 @@ from . import views
 urlpatterns = [
     path("", views.index, name="index"),
     path("chatgpt/", views.CHATGPT, name="chatgpt"),
+    path("langchain/", views.langChainFunc, name="langchain"),
+
 ]
